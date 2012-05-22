@@ -37,7 +37,7 @@ import com.arne5.droiddice.DiceSpinListener;
 public class RollActivity extends Activity implements OnClickListener {
 	DiceSpinListener misc = new DiceSpinListener(); // need this to implement the dice spinner listener
 	DieGroup Die = new DieGroup();
-	
+	//just test a change
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 	    MenuInflater inflater = getMenuInflater();
