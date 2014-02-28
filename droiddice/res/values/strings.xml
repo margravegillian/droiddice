@@ -4,6 +4,7 @@
 	<string name="rollActivity">Roller</string>
 	<string name="rollResultTitleStr">Result:</string>
 	<string name="sidesSpinPrompt">Select Dice Type</string>
+	<string name="MerisielActivity">Mersiel Activity</string>
 	<string-array name="sidesArray">
 		<item>d2</item>
 		<item>d3</item>
@@ -20,7 +21,8 @@
 		<item>Ability Score Roller</item>
 		<item>Dice Pool Roller</item>
 		<item>Pass It On</item>
-		<item>Merisiel</item>
+		<item>Path Find</item>
+		
 	</string-array>
 	<string name="commonRoll">Roll</string>
 	<string name="errorNotImplemented">This has not been implemented yet.</string>
