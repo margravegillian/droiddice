@@ -59,13 +59,11 @@ public class DieDroidMain extends ListActivity {
     		newActivity.setClassName(this, "com.arne5.droiddice.PoolActivity");
     		startActivity(newActivity);
     		break;
-    	case 3: // Pass It On
-    		newActivity.setClassName(this, "com.arne5.droiddice.PIOActivity");
+    	case 3: // Path FinderActivity
+    		newActivity.setClassName(this, "com.arne5.droiddice.PathActivity");
     		startActivity(newActivity);
     		break;
-    	case 4: //Merisiel
-    		newActivity.setClassName(this, "com.arne5.droiddice.MerisielActivity");
-    		startActivity(newActivity);
+    	
     		
     	default: //not implemented yet
     		Toast.makeText(this, R.string.errorNotImplemented, Toast.LENGTH_SHORT).show(); 

@@ -9,11 +9,11 @@ package com.arne5.droiddice;
 
 public final class R {
     public static final class array {
-        public static final int aboutAuthors=0x7f070003;
-        public static final int aboutTranslators=0x7f070004;
-        public static final int activityListChoices=0x7f070001;
-        public static final int sidesArray=0x7f070000;
-        public static final int statsRollMethods=0x7f070002;
+        public static final int aboutAuthors=0x7f080003;
+        public static final int aboutTranslators=0x7f080004;
+        public static final int activityListChoices=0x7f080001;
+        public static final int sidesArray=0x7f080000;
+        public static final int statsRollMethods=0x7f080002;
     }
     public static final class attr {
     }
@@ -23,6 +23,16 @@ public final class R {
         public static final int Green=0x7f050001;
         public static final int Red=0x7f050000;
         public static final int White=0x7f050003;
+    }
+    public static final class dimen {
+        /**  Default screen margins, per the Android Design guidelines. 
+
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
+    
+         */
+        public static final int activity_horizontal_margin=0x7f060000;
+        public static final int activity_vertical_margin=0x7f060001;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
@@ -35,125 +45,131 @@ public final class R {
         public static final int pio_right=0x7f020007;
     }
     public static final class id {
-        public static final int LinearLayout01=0x7f090011;
-        public static final int RelativeLayout01=0x7f090015;
-        public static final int activityList=0x7f090001;
-        public static final int btnrolld8=0x7f09000f;
-        public static final int edResultd8=0x7f090010;
-        public static final int menuAbout=0x7f090033;
-        public static final int menuHelp=0x7f090034;
-        public static final int pioDiceCaption=0x7f090016;
-        public static final int pioDieOne=0x7f090012;
-        public static final int pioDieThree=0x7f090014;
-        public static final int pioDieTwo=0x7f090013;
-        public static final int pioOneDieBtn=0x7f090017;
-        public static final int pioThreeDiceBtn=0x7f090019;
-        public static final int pioTwoDiceBtn=0x7f090018;
-        public static final int poolDialogCaption=0x7f090027;
-        public static final int poolDialogClose=0x7f090029;
-        public static final int poolDialogRoot=0x7f090026;
-        public static final int poolDialogSlider=0x7f090028;
-        public static final int poolDialogValue=0x7f09002a;
-        public static final int poolDiceNum=0x7f09001a;
-        public static final int poolDiceSides=0x7f09001b;
-        public static final int poolDieGridSquare=0x7f090000;
-        public static final int poolFail=0x7f09001f;
-        public static final int poolFailButton=0x7f090021;
-        public static final int poolFailText=0x7f090020;
-        public static final int poolHLine=0x7f090023;
-        public static final int poolResultsGrid=0x7f090025;
-        public static final int poolResultsTitle=0x7f090024;
-        public static final int poolRollButton=0x7f090022;
-        public static final int poolWin=0x7f09001c;
-        public static final int poolWinButton=0x7f09001d;
-        public static final int poolWinText=0x7f09001e;
-        public static final int rollAdd=0x7f090007;
-        public static final int rollDieLayout=0x7f090004;
-        public static final int rollDiePlus=0x7f090008;
-        public static final int rollDieTimes=0x7f09000a;
-        public static final int rollMult=0x7f090009;
-        public static final int rollNumDice=0x7f090006;
-        public static final int rollResult=0x7f090003;
-        public static final int rollResultTitle=0x7f090002;
-        public static final int rollRollButton=0x7f09000b;
-        public static final int rollSidesSpin=0x7f090005;
-        public static final int statsDropBar=0x7f09002d;
-        public static final int statsDropCap=0x7f09002c;
-        public static final int statsDropVal=0x7f090032;
-        public static final int statsHLine=0x7f09002f;
-        public static final int statsMethodSpin=0x7f09002b;
-        public static final int statsResultsGrid=0x7f090031;
-        public static final int statsResultsTitle=0x7f090030;
-        public static final int statsRollButton=0x7f09002e;
-        public static final int textView1=0x7f09000c;
-        public static final int textView2=0x7f09000d;
-        public static final int textView3=0x7f09000e;
+        public static final int LinearLayout01=0x7f0a0011;
+        public static final int RelativeLayout01=0x7f0a0015;
+        public static final int action_settings=0x7f0a0035;
+        public static final int activityList=0x7f0a0001;
+        public static final int btnrolld8=0x7f0a000f;
+        public static final int edResultd8=0x7f0a0010;
+        public static final int menuAbout=0x7f0a0033;
+        public static final int menuHelp=0x7f0a0034;
+        public static final int pioDiceCaption=0x7f0a0016;
+        public static final int pioDieOne=0x7f0a0012;
+        public static final int pioDieThree=0x7f0a0014;
+        public static final int pioDieTwo=0x7f0a0013;
+        public static final int pioOneDieBtn=0x7f0a0017;
+        public static final int pioThreeDiceBtn=0x7f0a0019;
+        public static final int pioTwoDiceBtn=0x7f0a0018;
+        public static final int poolDialogCaption=0x7f0a0027;
+        public static final int poolDialogClose=0x7f0a0029;
+        public static final int poolDialogRoot=0x7f0a0026;
+        public static final int poolDialogSlider=0x7f0a0028;
+        public static final int poolDialogValue=0x7f0a002a;
+        public static final int poolDiceNum=0x7f0a001a;
+        public static final int poolDiceSides=0x7f0a001b;
+        public static final int poolDieGridSquare=0x7f0a0000;
+        public static final int poolFail=0x7f0a001f;
+        public static final int poolFailButton=0x7f0a0021;
+        public static final int poolFailText=0x7f0a0020;
+        public static final int poolHLine=0x7f0a0023;
+        public static final int poolResultsGrid=0x7f0a0025;
+        public static final int poolResultsTitle=0x7f0a0024;
+        public static final int poolRollButton=0x7f0a0022;
+        public static final int poolWin=0x7f0a001c;
+        public static final int poolWinButton=0x7f0a001d;
+        public static final int poolWinText=0x7f0a001e;
+        public static final int rollAdd=0x7f0a0007;
+        public static final int rollDieLayout=0x7f0a0004;
+        public static final int rollDiePlus=0x7f0a0008;
+        public static final int rollDieTimes=0x7f0a000a;
+        public static final int rollMult=0x7f0a0009;
+        public static final int rollNumDice=0x7f0a0006;
+        public static final int rollResult=0x7f0a0003;
+        public static final int rollResultTitle=0x7f0a0002;
+        public static final int rollRollButton=0x7f0a000b;
+        public static final int rollSidesSpin=0x7f0a0005;
+        public static final int statsDropBar=0x7f0a002d;
+        public static final int statsDropCap=0x7f0a002c;
+        public static final int statsDropVal=0x7f0a0032;
+        public static final int statsHLine=0x7f0a002f;
+        public static final int statsMethodSpin=0x7f0a002b;
+        public static final int statsResultsGrid=0x7f0a0031;
+        public static final int statsResultsTitle=0x7f0a0030;
+        public static final int statsRollButton=0x7f0a002e;
+        public static final int textView1=0x7f0a000c;
+        public static final int textView2=0x7f0a000d;
+        public static final int textView3=0x7f0a000e;
     }
     public static final class layout {
-        public static final int approw=0x7f030000;
-        public static final int diegridsquare=0x7f030001;
-        public static final int main=0x7f030002;
-        public static final int merisiel=0x7f030003;
-        public static final int merisielold=0x7f030004;
-        public static final int passiton=0x7f030005;
-        public static final int pool=0x7f030006;
-        public static final int pool_dialog=0x7f030007;
-        public static final int roll=0x7f030008;
-        public static final int stats=0x7f030009;
+        public static final int activity_path=0x7f030000;
+        public static final int approw=0x7f030001;
+        public static final int diegridsquare=0x7f030002;
+        public static final int main=0x7f030003;
+        public static final int merisiel=0x7f030004;
+        public static final int merisielold=0x7f030005;
+        public static final int passiton=0x7f030006;
+        public static final int pool=0x7f030007;
+        public static final int pool_dialog=0x7f030008;
+        public static final int roll=0x7f030009;
+        public static final int stats=0x7f03000a;
     }
     public static final class menu {
-        public static final int optionmenu=0x7f080000;
+        public static final int optionmenu=0x7f090000;
+        public static final int path=0x7f090001;
     }
     public static final class raw {
         public static final int diedroid_license=0x7f040000;
     }
     public static final class string {
-        public static final int aboutCopyright=0x7f060022;
-        public static final int aboutEmail=0x7f060020;
-        public static final int aboutNotFoundText=0x7f060024;
-        public static final int aboutNotFoundTitle=0x7f060023;
-        public static final int aboutSiteLabel=0x7f060021;
-        public static final int app_name=0x7f060000;
-        public static final int commonClose=0x7f060016;
-        public static final int commonDisabled=0x7f06002c;
-        public static final int commonNo=0x7f060026;
-        public static final int commonOne=0x7f06001d;
-        public static final int commonRoll=0x7f060004;
-        public static final int commonThree=0x7f06001f;
-        public static final int commonTwo=0x7f06001e;
-        public static final int commonYes=0x7f060025;
-        public static final int errorInvalidEntry=0x7f060006;
-        public static final int errorNotEnoughDice=0x7f06000a;
-        public static final int errorNotImplemented=0x7f060005;
-        public static final int errorWinFailNegative=0x7f060009;
-        public static final int errorWinFailOverflow=0x7f06000b;
-        public static final int errorWinFailOverlap=0x7f060008;
-        public static final int mainHelpTxt=0x7f06001b;
-        public static final int menuAbout=0x7f06000f;
-        public static final int menuAboutText=0x7f060011;
-        public static final int menuHelp=0x7f060010;
-        public static final int menuHelpDice=0x7f060015;
-        public static final int menuHelpPIO=0x7f060012;
-        public static final int menuHelpPool=0x7f060013;
-        public static final int menuHelpStats=0x7f060014;
-        public static final int pioDiceCaptionStr=0x7f060019;
-        public static final int pioErrNoDice=0x7f06001a;
-        public static final int poolDialogTitle=0x7f06002b;
-        public static final int poolFailDialogCaption=0x7f06002a;
-        public static final int poolFailures=0x7f06000d;
-        public static final int poolOrLess=0x7f06002e;
-        public static final int poolOrMore=0x7f06002d;
-        public static final int poolResultsTitleStr=0x7f060007;
-        public static final int poolSuccesses=0x7f06000c;
-        public static final int poolWinDialogCaption=0x7f060029;
-        public static final int rollActivity=0x7f060001;
-        public static final int rollResultTitleStr=0x7f060002;
-        public static final int sidesSpinPrompt=0x7f060003;
-        public static final int statsDropCapTxt=0x7f06001c;
-        public static final int statsResultTitle=0x7f06000e;
-        public static final int urlAboutMarket=0x7f060027;
-        public static final int urlAboutWeb=0x7f060028;
-        public static final int urlLicense=0x7f060017;
-        public static final int urlWebsite=0x7f060018;
+        public static final int aboutCopyright=0x7f070022;
+        public static final int aboutEmail=0x7f070020;
+        public static final int aboutNotFoundText=0x7f070024;
+        public static final int aboutNotFoundTitle=0x7f070023;
+        public static final int aboutSiteLabel=0x7f070021;
+        public static final int action_settings=0x7f070030;
+        public static final int app_name=0x7f070000;
+        public static final int commonClose=0x7f070016;
+        public static final int commonDisabled=0x7f07002c;
+        public static final int commonNo=0x7f070026;
+        public static final int commonOne=0x7f07001d;
+        public static final int commonRoll=0x7f070004;
+        public static final int commonThree=0x7f07001f;
+        public static final int commonTwo=0x7f07001e;
+        public static final int commonYes=0x7f070025;
+        public static final int errorInvalidEntry=0x7f070006;
+        public static final int errorNotEnoughDice=0x7f07000a;
+        public static final int errorNotImplemented=0x7f070005;
+        public static final int errorWinFailNegative=0x7f070009;
+        public static final int errorWinFailOverflow=0x7f07000b;
+        public static final int errorWinFailOverlap=0x7f070008;
+        public static final int hello_world=0x7f070031;
+        public static final int mainHelpTxt=0x7f07001b;
+        public static final int menuAbout=0x7f07000f;
+        public static final int menuAboutText=0x7f070011;
+        public static final int menuHelp=0x7f070010;
+        public static final int menuHelpDice=0x7f070015;
+        public static final int menuHelpPIO=0x7f070012;
+        public static final int menuHelpPool=0x7f070013;
+        public static final int menuHelpStats=0x7f070014;
+        public static final int pioDiceCaptionStr=0x7f070019;
+        public static final int pioErrNoDice=0x7f07001a;
+        public static final int poolDialogTitle=0x7f07002b;
+        public static final int poolFailDialogCaption=0x7f07002a;
+        public static final int poolFailures=0x7f07000d;
+        public static final int poolOrLess=0x7f07002e;
+        public static final int poolOrMore=0x7f07002d;
+        public static final int poolResultsTitleStr=0x7f070007;
+        public static final int poolSuccesses=0x7f07000c;
+        public static final int poolWinDialogCaption=0x7f070029;
+        public static final int rollActivity=0x7f070001;
+        public static final int rollResultTitleStr=0x7f070002;
+        public static final int sidesSpinPrompt=0x7f070003;
+        public static final int statsDropCapTxt=0x7f07001c;
+        public static final int statsResultTitle=0x7f07000e;
+        public static final int title_activity_path=0x7f07002f;
+        public static final int urlAboutMarket=0x7f070027;
+        public static final int urlAboutWeb=0x7f070028;
+        public static final int urlLicense=0x7f070017;
+        public static final int urlWebsite=0x7f070018;
     }
 }
