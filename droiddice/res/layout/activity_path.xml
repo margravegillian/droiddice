@@ -9,8 +9,40 @@
     tools:context=".PathActivity" >
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/Path_Char" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="15dp"
+        android:text="d8"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+  
+
+    <EditText
+        android:id="@+id/etResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnroll"
+        android:layout_marginTop="88dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etResult"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_marginLeft="48dp"
+        android:text="roll" />
 
 </RelativeLayout>
