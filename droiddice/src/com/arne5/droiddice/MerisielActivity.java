@@ -85,9 +85,9 @@ public class MerisielActivity extends Activity implements OnClickListener {
         dieSpinner.setOnItemSelectedListener(misc);
         
         // ditto with the button
-        Button rolld8 = (Button) findViewById(R.id.btnrolld8);
+       // Button rolld8 = (Button) findViewById(R.id.btnrolld8);
         
-        rolld8.setOnClickListener(this);
+       // rolld8.setOnClickListener(this);
         
     }
 }

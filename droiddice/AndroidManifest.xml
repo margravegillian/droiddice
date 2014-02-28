@@ -15,7 +15,7 @@
 <activity android:screenOrientation="portrait" android:name="PoolActivity"></activity>
 <activity android:screenOrientation="portrait" android:name="StatsActivity"></activity>
 <activity android:screenOrientation="portrait" android:name="PIOActivity"></activity>
-<activity android:screenOrientation="portrait" android:name="com.arne5.droiddice.MerisielActivity"></activity>
+<activity android:screenOrientation="portrait" android:name="MerisielActivity"></activity>
 <meta-data android:value="@string/aboutEmail" android:name="org.openintents.metadata.EMAIL"></meta-data>
 <meta-data android:name="org.openintents.metadata.WEBSITE_URL" android:value="@string/urlWebsite"></meta-data>
 <meta-data android:value="@string/aboutSiteLabel" android:name="org.openintents.metadata.WEBSITE_LABEL"></meta-data>

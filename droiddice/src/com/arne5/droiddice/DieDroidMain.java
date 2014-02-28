@@ -64,7 +64,7 @@ public class DieDroidMain extends ListActivity {
     		startActivity(newActivity);
     		break;
     	case 4: //Merisiel
-    		newActivity.setClassName(this,  "com.arne5.droiddice.MerisielActivity");
+    		newActivity.setClassName(this, "com.arne5.droiddice.MerisielActivity");
     		startActivity(newActivity);
     		
     	default: //not implemented yet
