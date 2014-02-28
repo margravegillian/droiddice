@@ -64,10 +64,8 @@ public class DieDroidMain extends ListActivity {
     		startActivity(newActivity);
     		break;
     	case 4: //Merisiel
-    		newActivity.setClassName(this, "com.arne5.droiddice.PathFindActivity");
+    		newActivity.setClassName(this,  "com.arne5.droiddice.MerisielActivity");
     		startActivity(newActivity);
-    		
-    	
     		
     	default: //not implemented yet
     		Toast.makeText(this, R.string.errorNotImplemented, Toast.LENGTH_SHORT).show(); 

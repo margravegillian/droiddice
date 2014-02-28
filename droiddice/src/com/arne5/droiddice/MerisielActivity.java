@@ -1,84 +1,20 @@
 package com.arne5.droiddice;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.ActivityNotFoundException;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
-public class MerisielActivitynotworking extends Activity implements OnClickListener {
+public class MerisielActivity extends Activity implements OnClickListener {
 	DiceSpinListener misc = new DiceSpinListener(); // need this to implement the dice spinner listener
 	DieGroup Die = new DieGroup();
-	
-	
-	
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		MenuInflater inflater = getMenuInflater();
-		inflater.inflate(R.menu.optionmenu, menu);
-		return true;
-	}
-	
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-	    // Handle item selection
-	    switch (item.getItemId()) {
-	    case R.id.menuAbout:
-	    	Intent about = new Intent("org.openintents.action.SHOW_ABOUT_DIALOG");
-	    	try {
-	    		startActivityForResult(about, 0);
-	    	}
-	    	catch(ActivityNotFoundException e) {
-	    		AlertDialog.Builder notFoundBuilder = new AlertDialog.Builder(this);
-	    		notFoundBuilder.setMessage(R.string.aboutNotFoundText)
-	    				.setTitle(R.string.aboutNotFoundTitle)
-	    				.setPositiveButton(R.string.commonYes, new DialogInterface.OnClickListener() {
-	    					public void onClick(DialogInterface dialog, int id) {
-	    						try{
-	    							Intent getApp = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.urlAboutMarket)));
-	    							startActivity(getApp);
-	    						}
-	    						catch(ActivityNotFoundException e) {
-	    							Intent getAppAlt = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.urlAboutWeb)));
-	    							startActivity(getAppAlt);
-	    						}
-	    					}
-	    				})
-	    				.setNegativeButton(R.string.commonNo, new DialogInterface.OnClickListener() {
-	 	    	           public void onClick(DialogInterface dialog, int id) {
-	 	    	                dialog.cancel();
-	 	    	           }
-	 	    	       });
-	    		AlertDialog notFound = notFoundBuilder.create();
-	    		notFound.show();
-	    	}
-	    	return true;
-	    case R.id.menuHelp:
-	    	AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
-	    	builder1.setMessage(R.string.menuHelpDice)
-	    	       .setTitle(R.string.menuHelp)
-	    	       .setNegativeButton(R.string.commonClose, new DialogInterface.OnClickListener() {
-	    	           public void onClick(DialogInterface dialog, int id) {
-	    	                dialog.cancel();
-	    	           }
-	    	       });
-	    	AlertDialog help = builder1.create();
-	    	help.show();
-	    default:
-	        return super.onOptionsItemSelected(item);
-	    }
-	}
 	public void onClick(View v) {
 		
 
@@ -129,7 +65,12 @@ public class MerisielActivitynotworking extends Activity implements OnClickListe
 		
 	}
 
-	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.optionmenu, menu);
+		return true;
+	}
 	
 	
 	
