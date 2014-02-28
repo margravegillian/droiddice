@@ -15,6 +15,15 @@ local.properties
 .classpath
 .settings/
 .loadpath
+*.apk
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+proguard/
+
+
 
 # External tool builders
 .externalToolBuilders/
