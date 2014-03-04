@@ -6,6 +6,8 @@
 .project
 .metadata
 bin/
+gen/
+gen
 tmp/
 *.tmp
 *.bak
@@ -19,8 +21,7 @@ local.properties
 *.ap_
 *.dex
 *.class
-bin/
-gen/
+
 proguard/
 
 # Android Studio
