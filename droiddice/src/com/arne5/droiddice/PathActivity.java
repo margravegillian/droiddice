@@ -8,6 +8,8 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class PathActivity extends Activity implements OnClickListener{
 
@@ -37,16 +39,53 @@ public class PathActivity extends Activity implements OnClickListener{
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		
-		Die.Sides=12;
-		Die.Quantity = 1;
-		Die.Adder=0;
-		Die.Multiplier=0;
-		int diceTotal = Die.roll();
-		
-		EditText d8total = (EditText) findViewById(R.id.etResult);
-		StringBuilder d8TotalStr = new StringBuilder();
-		d8TotalStr.append(diceTotal);
-		d8total.setText(d8TotalStr);
+//		Die.Sides=12;
+//		Die.Quantity = 1;
+//		Die.Adder=0;
+//		Die.Multiplier=0;
+//		int diceTotal = Die.roll();
+//
+//		EditText d8total = (EditText) findViewById(R.id.etResult);
+//		StringBuilder d8TotalStr = new StringBuilder();
+//		d8TotalStr.append(diceTotal);
+//		d8total.setText(d8TotalStr);
+
+
+        // capture text boxes
+       // TextView tNumDice = (TextView) findViewById(R.id.rollNumDice);
+       // TextView tAdder = (TextView) findViewById(R.id.rollAdd);
+       // TextView tMult = (TextView) findViewById(R.id.rollMult);
+
+        // grab values from text boxes and spinner
+        Die.Sides = 8 ; // misc.getSelValue();
+        try { // catch blank strings in the text boxes
+            Die.Quantity = 1;//Integer.valueOf(tNumDice.getText().toString());
+            Die.Adder = 0; // Integer.valueOf(tAdder.getText().toString());
+            Die.Multiplier = 1; //Integer.valueOf(tMult.getText().toString());
+        }
+        catch (NumberFormatException e) {
+            Toast.makeText(this, R.string.errorInvalidEntry, Toast.LENGTH_SHORT).show();
+        }
+
+        if(Die.Quantity < 1) {
+            // we can't roll less than one die
+            Toast.makeText(this, R.string.errorNotEnoughDice, Toast.LENGTH_SHORT).show();
+        }
+        else {
+            int diceTotal = Die.roll();
+
+            // capture TextView for result and output total
+           // TextView grandTotal = (TextView) findViewById(R.id.rollResult);
+          //  StringBuilder grandTotalStr = new StringBuilder();
+           // grandTotalStr.append(diceTotal);
+          //  grandTotal.setText(grandTotalStr);
+
+           	EditText d8total = (EditText) findViewById(R.id.etResult);
+		    StringBuilder d8TotalStr = new StringBuilder();
+        	d8TotalStr.append(diceTotal);
+	    	d8total.setText(d8TotalStr);
+
+        }
 		
 		
 		
