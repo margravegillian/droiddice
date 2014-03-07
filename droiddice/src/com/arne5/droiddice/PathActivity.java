@@ -37,7 +37,7 @@ public class PathActivity extends Activity implements OnClickListener{
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		
-		Die.Sides=8;
+		Die.Sides=12;
 		Die.Quantity = 1;
 		Die.Adder=0;
 		Die.Multiplier=0;
