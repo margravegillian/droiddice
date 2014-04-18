@@ -13,11 +13,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.media.MediaPlayer;
 
+
 import static android.media.MediaPlayer.*;
 
 public class PathActivity extends Activity implements OnClickListener{
 
-	
+
 	DiceSpinListener misc = new DiceSpinListener();
 	DieGroup Die = new DieGroup();
     MediaPlayer mp;
@@ -30,7 +31,8 @@ public class PathActivity extends Activity implements OnClickListener{
 		
 
 
-		
+
+
 		Button rolld8 = (Button) findViewById(R.id.btnroll);
 
 	    rolld8.setOnClickListener(this);
@@ -67,8 +69,15 @@ public class PathActivity extends Activity implements OnClickListener{
        // TextView tMult = (TextView) findViewById(R.id.rollMult);
 
         //create sound
-        MediaPlayer mp = MediaPlayer.create(this,R.raw.diethrow1);
-        mp.start();
+        //MediaPlayer mp = MediaPlayer.create(this,R.raw.diethrow1);
+       // mp.start();
+
+        //using sound manager class. not sure why cant create new one other places
+       // SoundManager soundManager = new SoundManager();
+      //  soundManager.dice();
+
+
+
 
         // grab values from text boxes and spinner
         Die.Sides = 8 ; // misc.getSelValue();
