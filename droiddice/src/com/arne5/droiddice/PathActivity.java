@@ -1,5 +1,6 @@
 package com.arne5.droiddice;
 
+import android.media.SoundPool;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -10,22 +11,31 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.media.MediaPlayer;
+
+import static android.media.MediaPlayer.*;
 
 public class PathActivity extends Activity implements OnClickListener{
 
 	
 	DiceSpinListener misc = new DiceSpinListener();
 	DieGroup Die = new DieGroup();
+    MediaPlayer mp;
+
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_path);
 		
-		
+
+
 		
 		Button rolld8 = (Button) findViewById(R.id.btnroll);
-        
+
 	    rolld8.setOnClickListener(this);
+
+
 		
 	}
 
@@ -56,6 +66,10 @@ public class PathActivity extends Activity implements OnClickListener{
        // TextView tAdder = (TextView) findViewById(R.id.rollAdd);
        // TextView tMult = (TextView) findViewById(R.id.rollMult);
 
+        //create sound
+        MediaPlayer mp = MediaPlayer.create(this,R.raw.diethrow1);
+        mp.start();
+
         // grab values from text boxes and spinner
         Die.Sides = 8 ; // misc.getSelValue();
         try { // catch blank strings in the text boxes
@@ -84,6 +98,10 @@ public class PathActivity extends Activity implements OnClickListener{
 		    StringBuilder d8TotalStr = new StringBuilder();
         	d8TotalStr.append(diceTotal);
 	    	d8total.setText(d8TotalStr);
+
+
+
+
 
         }
 		
