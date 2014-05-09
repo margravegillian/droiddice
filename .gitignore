@@ -36,6 +36,8 @@ proguard/
 *.ipr
 *~
 *.swp
+.idea/workspace.xml
+.idea/tasks.xml
 
 # External tool builders
 .externalToolBuilders/
