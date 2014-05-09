@@ -33,10 +33,7 @@
             android:name="com.arne5.droiddice.PIOActivity"
             android:screenOrientation="portrait" >
         </activity>
-        <activity
-            android:name="com.arne5.droiddice.MerisielActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+
 
         <meta-data
             android:name="org.openintents.metadata.EMAIL"
@@ -74,7 +71,7 @@
     </application>
 
     <uses-sdk
-        android:minSdkVersion="3"
+        android:minSdkVersion="7"
         android:targetSdkVersion="10" />
 
 </manifest>
