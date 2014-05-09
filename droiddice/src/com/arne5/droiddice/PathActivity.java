@@ -19,38 +19,38 @@ import static android.media.MediaPlayer.*;
 public class PathActivity extends Activity implements OnClickListener{
 
 
-	DiceSpinListener misc = new DiceSpinListener();
-	DieGroup Die = new DieGroup();
+    DiceSpinListener misc = new DiceSpinListener();
+    DieGroup Die = new DieGroup();
     MediaPlayer mp;
 
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_path);
-		
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_path);
 
 
 
 
-		Button rolld8 = (Button) findViewById(R.id.btnroll);
 
-	    rolld8.setOnClickListener(this);
+        Button rolld8 = (Button) findViewById(R.id.btnroll);
+
+        rolld8.setOnClickListener(this);
 
 
-		
-	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.path, menu);
-		return true;
-	}
+    }
 
-	public void onClick(View v) {
-		// TODO Auto-generated method stub
-		
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.path, menu);
+        return true;
+    }
+
+    public void onClick(View v) {
+        // TODO Auto-generated method stub
+
 //		Die.Sides=12;
 //		Die.Quantity = 1;
 //		Die.Adder=0;
@@ -64,17 +64,17 @@ public class PathActivity extends Activity implements OnClickListener{
 
 
         // capture text boxes
-       // TextView tNumDice = (TextView) findViewById(R.id.rollNumDice);
-       // TextView tAdder = (TextView) findViewById(R.id.rollAdd);
-       // TextView tMult = (TextView) findViewById(R.id.rollMult);
+        // TextView tNumDice = (TextView) findViewById(R.id.rollNumDice);
+        // TextView tAdder = (TextView) findViewById(R.id.rollAdd);
+        // TextView tMult = (TextView) findViewById(R.id.rollMult);
 
         //create sound
         //MediaPlayer mp = MediaPlayer.create(this,R.raw.diethrow1);
-       // mp.start();
+        // mp.start();
 
         //using sound manager class. not sure why cant create new one other places
-       // SoundManager soundManager = new SoundManager();
-      //  soundManager.dice();
+        // SoundManager soundManager = new SoundManager();
+        //  soundManager.dice();
 
 
 
@@ -98,24 +98,27 @@ public class PathActivity extends Activity implements OnClickListener{
             int diceTotal = Die.roll();
 
             // capture TextView for result and output total
-           // TextView grandTotal = (TextView) findViewById(R.id.rollResult);
-          //  StringBuilder grandTotalStr = new StringBuilder();
-           // grandTotalStr.append(diceTotal);
-          //  grandTotal.setText(grandTotalStr);
+            // TextView grandTotal = (TextView) findViewById(R.id.rollResult);
+            //  StringBuilder grandTotalStr = new StringBuilder();
+            // grandTotalStr.append(diceTotal);
+            //  grandTotal.setText(grandTotalStr);
 
-           	EditText d8total = (EditText) findViewById(R.id.etResult);
-		    StringBuilder d8TotalStr = new StringBuilder();
-        	d8TotalStr.append(diceTotal);
-	    	d8total.setText(d8TotalStr);
+            EditText d8total = (EditText) findViewById(R.id.etResult);
+            StringBuilder d8TotalStr = new StringBuilder();
+            d8TotalStr.append(diceTotal);
+            d8total.setText(d8TotalStr);
+            MediaPlayer mp = MediaPlayer.create(this,R.raw.diethrow1);
+             mp.start();
+
 
 
 
 
 
         }
-		
-		
-		
-	}
+
+
+
+    }
 
 }
